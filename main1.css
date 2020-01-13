@@ -1,0 +1,429 @@
+
+
+/*-----Global-----*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;  
+}
+html{
+    font-family: proxima nova, sans-serif;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-10, .bgimg-11 
+, .bgimg-12, .bgimg-13, .bgimg-14, .bgimg-15, .bgimg-17{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.bgimg-1 {
+  background-image: url("plaatjes/webss.png");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("plaatjes/aboutl.PNG");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("plaatjes/babuljacage.png");
+  min-height: 400px;
+}
+.bgimg-4 {
+  background-image: url("plaatjes/posetrs.PNG");
+  min-height: 400px;
+}
+.bgimg-5 {
+  background-image: url("plaatjes/kevin1.PNG");
+  min-height: 400px;
+    
+}
+.bgimg-6 {
+  background-image: url("plaatjes/poster1.PNG");
+  min-height: 400px;
+    
+}
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url("plaatjes/webss.png");
+
+    /* Set a specific height */
+    min-height: 900px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #9347b0;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+.work a img{
+    margin: 1%;
+    width: 100%;
+}
+a:link {
+    color: #9347b0; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9347b0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9347b0;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #9347b0;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.box{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+  }
+
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: #111;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+   
+    flex-direction: column;
+  }
+}
+
+a{
+    margin: 0 200px 0px 200px;
+}
+p{
+    margin: 0 200px 0px 200px;
+}
+@media only screen and (max-width: 991px){
+    a{
+    margin: 0 40px 0px 40px;
+}
+p{
+    margin: 0 40px 0px 40px
+}
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, .row {
+    text-align: center;
+}
+
+.row figure {
+    height: 240px;
+    width: 240px;
+    margin:0;
+    background-size: cover;
+	background-position: 50% 50%;
+    box-shadow:0 0 15px rgba(0, 0, 0, 0.7);
+    transition: all 1s ease-in-out;
+    background-repeat:no-repeat;
+    z-index:2;
+    display:inline-block;
+    position:relative;
+
+}
+
+.row a {
+    display: inline-block;
+    text-align: center;
+    margin:40px;
+    text-decoration:none;
+    color:white;
+}
+
+.row a p {
+    position:absolute;
+    opacity: 0;
+    font-size: 20px;
+    top:45%;
+    z-index:100;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+figure:hover p {
+    opacity:1;
+}
+
+figure:after {
+    content:"";
+    display:inline-block;
+    height:100%;
+    width:100%;
+    background-color:#777;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity:0;
+    transition: all 0.4s ease-in-out 0s;
+    z-index:99;
+}
+
+figure:hover:after {
+    opacity:0.7;
+}
+
+.Moodboard1 {
+	background-image:url(plaatjes/moodboard1.PNG)
+}
+
+.Moodboard2 {
+	background-image: url("plaatjes/moodboard2.PNG");
+}
+
+.Moodboard3 {
+	background-image: url("plaatjes/moodoard3.PNG");
+}
+
+.Moodboard4 {
+	background-image: url("plaatjes/moodboard4.PNG");
+}
+
+.Poster {
+	background-image: url("plaatjes/babuljaposter.PNG");
+}
+
+.Menu {
+	background-image: url("plaatjes/menukaart.PNG");
+}
+
+.Stopmotion {
+	background-image: url("plaatjes/sttopl.PNG");
+}
+
+.Verhaal {
+	background-image: url("plaatjes/book.png");
+}
+
+.VideoB {
+	background-image: url("plaatjes/babuljastory.PNG");
+}
+
+.kamer1 {
+	background-image: url("plaatjes/kamer1.png");
+}
+
+.kamer2 {
+	background-image: url("plaatjes/kamer2.png");
+}
+
+.website1 {
+	background-image: url("plaatjes/websitebbulja.png");
+}
+
+.website2 {
+	background-image: url("plaatjes/websitebbuljav1.png");
+}
+
+.website3 {
+	background-image: url("plaatjes/websitebbuljav2.png");
+}
+
+.test {
+	background-image: url("plaatjes/testt.PNG");
+}
+
+/* lightbox */
+
+.lightbox-target {
+  position: fixed;
+  top: -100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  overflow: scroll;
+  z-index:300;
+    
+}
+
+.lightbox-target .container {
+  margin: auto;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  -o-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+  text-align:left;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+h3 {
+    text-align: center;
+}
+
+.container .elements {
+    display:inline-block;
+    width: 40%;
+    max-height: 425px;
+
+}
+
+
+
+a.lightbox-close {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: green;
+  color: greenyellow;
+  text-decoration: none;
+  position: fixed;
+  top: 0px;
+  right: 0;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.lightbox-target:target {
+  opacity: 1;
+  top: 0;
+  bottom: 0;
+    
+    
+}
+
+.lightbox-target:target img {
+    height: 800px;
+    vertical-align: top;
+     overflow-y:scroll;
+    
+    
+}
+
+
+
+
+.feeback {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
