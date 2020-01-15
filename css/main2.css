@@ -1,0 +1,210 @@
+
+
+/*-----Global-----*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;  
+}
+html{
+    font-family: proxima nova, sans-serif;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-10, .bgimg-11 
+, .bgimg-12, .bgimg-13, .bgimg-14, .bgimg-15, .bgimg-17{
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.bgimg-1 {
+  background-image: url(../plaatjes/webss.png);
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url(../plaatjes/aboutl.PNG);
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url(../plaatjes/babuljacage.png);
+  min-height: 400px;
+}
+.bgimg-4 {
+  background-image: url(../plaatjes/posetrs.PNG);
+  min-height: 400px;
+}
+.bgimg-5 {
+  background-image: url(../plaatjes/kevin1.PNG);
+  min-height: 400px;
+    
+}
+.bgimg-6 {
+  background-image: url(../plaatjes/poster1.jpg);
+  min-height: 400px;
+    
+}
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url(../plaatjes/webss.png);
+
+    /* Set a specific height */
+    min-height: 900px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+  color: #9347b0;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+.work a img{
+    margin: 1%;
+    width: 100%;
+}
+a:link {
+    color: #9347b0; 
+    background-color: transparent; 
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9347b0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9347b0;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #9347b0;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.box{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+  }
+
+
+.cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+#fadeout {
+  opacity: 1;
+  transition: 1s opacity;
+  text-align: center;
+  font-size:32px;
+}
+
+p2 {
+  text-align: center;
+}
+
+
