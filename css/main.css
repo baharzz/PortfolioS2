@@ -252,3 +252,17 @@ p{
 }
 }
 
+buttonjava {
+    margin-top: 20px;
+    line-height: 60px;
+    font-weight: bold;
+    padding: 0 40px;
+    background: hotpink;
+    border: none;
+    font-size: 40px;
+    padding-left: 50%;
+    padding-right: 50%;
+}
+buttonjava:hover {
+    background: lightpink;
+}

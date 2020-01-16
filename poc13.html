@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/main.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+
+<nav id="navbar" class="">
+    <div class="nav-wrapper">
+
+        <!-- Navbar Links -->
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="selfieweek.html">Selfieweek</a></li><!--
+  --><li><a href="inspiratie.html">Sprint 0</a></li><!--
+   --><li><a href="sprint1.html">Sprint 1</a></li><!--
+   --><li><a href="sprint2.html">Sprint 2</a></li><!--
+   --><li><a href="sprint3.html">Sprint 3</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="bgimg-1">
+    <div class="caption">
+
+        <span class="border" >Poc</span>
+    </div>
+</div>
+
+<div style="position:relative;">
+    <div style="color:hotpink;background-color:white;text-align:center;text-align: justify; font-size: 100px">
+
+        <h3>Click Counter</h3>
+        <button id="teller">Aantal keren geklikt: 0</button>
+
+    </div>
+</div>
+
+<div class="bgimg-1">
+    <div class="caption">
+        <span class="border"><a href="development.html">BACK</a></span>
+    </div>
+</div>
+
+<script>
+    var button = document.getElementById("teller"),
+        count = 0;
+    button.onclick = function() {
+        count += 1;
+        button.innerHTML = "Aantal: " + count;
+    };
+</script>
+</body>
+</html>
