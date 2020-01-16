@@ -1,0 +1,368 @@
+
+
+/*-----Global-----*/
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html{
+    font-family: proxima nova, sans-serif;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font: 400 15px/1.8 "Lato", sans-serif;
+    color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6, .bgimg-10, .bgimg-11
+, .bgimg-12, .bgimg-13, .bgimg-14, .bgimg-15, .bgimg-17{
+    position: relative;
+    opacity: 0.65;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+.bgimg-1 {
+    background-image: url(../plaatjes/webss.png);
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url(../plaatjes/aboutl.PNG);
+    min-height: 400px;
+}
+
+.bgimg-3 {
+    background-image: url(../plaatjes/babuljacage.png);
+    min-height: 400px;
+}
+.bgimg-4 {
+    background-image: url(../plaatjes/posetrs.PNG);
+    min-height: 400px;
+}
+.bgimg-5 {
+    background-image: url(../plaatjes/kevin1.PNG);
+    min-height: 400px;
+
+}
+.bgimg-6 {
+    background-image: url(../plaatjes/poster1.jpg);
+    min-height: 400px;
+
+}
+
+
+
+.parallax {
+    /* The image used */
+    background-image: url(../plaatjes/webss.png);
+
+    /* Set a specific height */
+    min-height: 900px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.caption span.border {
+    background-color: #111;
+    color: #9347b0;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+h3 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #111;
+}
+.work a img{
+    margin: 1%;
+    width: 100%;
+}
+a:link {
+    color: #9347b0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9347b0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9347b0;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #9347b0;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+.box{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin: 0 auto;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+#navbar {
+    background: transparent;
+    color: purple;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    line-height: 60px;
+    width: 100vw;
+    z-index: 10;
+}
+
+.nav-wrapper {
+    margin: auto;
+    text-align: center;
+    width: 70%;
+} @media(max-width: 768px) {
+    .nav-wrapper {
+        width: 90%;
+    }
+} @media(max-width: 638px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+}
+
+#navbar ul {
+    display: inline-block;
+    float: right;
+    list-style: none;
+    /* margin-right: 14px; */
+    margin-top: -2px;
+    text-align: right;
+    transition: transform 0.5s ease-out;
+    -webkit-transition: transform 0.5s ease-out;
+} @media(max-width: 640px) {
+    #navbar ul {
+        display: none;
+    }
+} @media(orientation: landscape) {
+    #navbar ul {
+        display: inline-block;
+    }
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+#navbar li a {
+    color: white;
+    display: block;
+    font-size: 1em;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+#navbar li a:hover {
+    /* border-bottom: 1px solid rgb(28, 121, 184); */
+    color: purple;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+/* Animated Bottom Line */
+#navbar li a:before, #navbar li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -1px;
+    background: purple;
+}
+
+#navbar li a:before {
+    left: 0;
+    transition: 0.5s;
+}
+
+#navbar li a:after {
+    background: purple;
+    right: 0;
+    /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+
+#navbar li a:hover:before {
+    background: purple;
+    width: 100%;
+    transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+#navbar li a:hover:after {
+    background: transparent;
+    width: 100%;
+    /* transition: 0s; */
+}
+
+.container {
+    margin: 0 auto;
+    font-size: 22px;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.container11 {
+    color: hotpink;
+    text-align: center;
+background-color: black;
+}
+
+
+h1 {
+    font-weight: normal;
+}
+
+li {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+li span {
+    display: block;
+    font-size: 4.5rem;
+}

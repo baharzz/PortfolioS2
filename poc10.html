@@ -35,12 +35,12 @@
 <script src="/js/poc10.js"></script>
 
 <script>
-    function myFunction() {
+    function myFunction() {                                          //methode, als die nodig is kan je het oproepen
         var x = document.getElementById("myDIV");
-        if (x.innerHTML === "Hola") {
-            x.innerHTML = "Doei";
+        if (x.innerHTML == "Hola") {                                 //Hola staat er altijd
+            x.innerHTML = "Doei"                                     //Als er Hola staat maakt die er doei van
         } else {
-            x.innerHTML = "Hello";
+            x.innerHTML = "Hola";                                    //en anders weer Hola
         }
     }
 </script>
