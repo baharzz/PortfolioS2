@@ -12,6 +12,10 @@ var modal10 = document.getElementById('dried');
 var modal11 = document.getElementById('dried1');
 var modal12 = document.getElementById('persona');
 var modal13 = document.getElementById('storyboard');
+var modal14 = document.getElementById('storyboard1');
+var modal15 = document.getElementById('storyboard2');
+var modal16 = document.getElementById('storyboard3');
+var modal17 = document.getElementById('storyboard4');
 
 window.onclick = function (event) {
     if (event.target == modal) {
@@ -56,6 +60,17 @@ window.onclick = function (event) {
     if (event.target == modal13) {
         modal13.style.display = "none";
     }
-
+    if (event.target == modal14) {
+        modal14.style.display = "none";
+    }
+    if (event.target == modal15) {
+        modal15.style.display = "none";
+    }
+    if (event.target == modal16) {
+        modal16.style.display = "none";
+    }
+    if (event.target == modal17) {
+        modal17.style.display = "none";
+    }
 
 }

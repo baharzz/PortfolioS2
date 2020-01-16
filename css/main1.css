@@ -488,6 +488,20 @@ figure:hover:after {
 .hi {
     background-image: url(../plaatjes/1_rGiHBnlqf6-koapA2DzUoA.jpeg)
 }
+
+.storyboard1 {
+    background-image: url(../plaatjes/storyboarditteratie.jpeg)
+}
+.storyboard2 {
+    background-image: url(../plaatjes/storyboarditteratie1.jpeg)
+}
+.storyboard3 {
+    background-image: url(../plaatjes/storyboarditteratie2.jpeg)
+}
+
+.storyboard4 {
+    background-image: url(../plaatjes/storyboarditteratie3.jpeg)
+}
 /* lightbox */
 
 .lightbox-target {
